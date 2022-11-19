@@ -940,6 +940,14 @@ PrefabInstance:
       propertyPath: npc
       value: 
       objectReference: {fileID: 699480829}
+    - target: {fileID: 4701717014665229308, guid: 810d0a18551ba834091c5db4a197d5ee, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4701717014665229310, guid: 810d0a18551ba834091c5db4a197d5ee, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4701717014665229311, guid: 810d0a18551ba834091c5db4a197d5ee, type: 3}
       propertyPath: keys
       value: 
@@ -948,6 +956,10 @@ PrefabInstance:
       propertyPath: coins
       value: 
       objectReference: {fileID: 56795847}
+    - target: {fileID: 4701717014665229311, guid: 810d0a18551ba834091c5db4a197d5ee, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 810d0a18551ba834091c5db4a197d5ee, type: 3}
 --- !u!1 &379298349 stripped

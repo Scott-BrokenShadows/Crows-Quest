@@ -54,13 +54,16 @@ public class GrabController : MonoBehaviour
             {
                 grabCheck.collider.gameObject.transform.parent = holder;
                 grabCheck.collider.gameObject.transform.position = holder.position;
-                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+                Destroy(grabCheck.collider.gameObject.GetComponent<Rigidbody2D>());
+                //grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
                 grabbed = true;
             }
             else if (grabbed)
             {
                 grabCheck.collider.gameObject.transform.parent = null;
-                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+                //grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+                grabCheck.collider.gameObject.AddComponent<Rigidbody2D>();
+                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().freezeRotation = true;
                 grabbed = false;
             }
         }
