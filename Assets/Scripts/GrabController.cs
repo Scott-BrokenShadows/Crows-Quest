@@ -55,11 +55,15 @@ public class GrabController : MonoBehaviour
                 grabCheck.collider.gameObject.transform.parent = holder;
                 grabCheck.collider.gameObject.transform.position = holder.position;
                 Destroy(grabCheck.collider.gameObject.GetComponent<Rigidbody2D>());
+                grabCheck.collider.gameObject.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
                 //grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
                 grabbed = true;
             }
             else if (grabbed)
             {
+                transform.GetChild(2).localScale =
+                new Vector3(Mathf.Abs(transform.GetChild(2).localScale.x), transform.GetChild(2).localScale.y, transform.GetChild(2).localScale.z);
+
                 grabCheck.collider.gameObject.transform.parent = null;
                 //grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
                 grabCheck.collider.gameObject.AddComponent<Rigidbody2D>();
