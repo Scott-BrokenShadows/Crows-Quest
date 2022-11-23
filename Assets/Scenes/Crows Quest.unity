@@ -185,6 +185,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4440549515902312759, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440549515902312759, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -433832811
+      objectReference: {fileID: 0}
     - target: {fileID: 4440549515902312761, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
       propertyPath: coin
       value: 
@@ -202,9 +210,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5343106954107881200, guid: b78702531cc991540bea14f3518027c2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343106954107881200, guid: b78702531cc991540bea14f3518027c2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -433832811
+      objectReference: {fileID: 0}
     - target: {fileID: 5343106954107881201, guid: b78702531cc991540bea14f3518027c2, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5343106954107881201, guid: b78702531cc991540bea14f3518027c2, type: 3}
       propertyPath: m_LocalScale.x
@@ -816,6 +832,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4440549515902312759, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440549515902312759, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -433832811
+      objectReference: {fileID: 0}
     - target: {fileID: 4440549515902312761, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
       propertyPath: coin
       value: 
@@ -884,7 +908,7 @@ SpriteRenderer:
   m_SortingLayerID: -433832811
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c8244e3f9b1af8d459c9bbe2c15666cc, type: 3}
+  m_Sprite: {fileID: -1462503255, guid: faaa5efe4ada477479c82042da7ede68, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -904,7 +928,7 @@ Transform:
   m_GameObject: {fileID: 230436311}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 152.86, y: 47.25, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 1}
+  m_LocalScale: {x: 7.5, y: 7.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -15929,6 +15953,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4440549515902312759, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440549515902312759, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -433832811
+      objectReference: {fileID: 0}
     - target: {fileID: 4440549515902312761, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
       propertyPath: coin
       value: 
@@ -21067,6 +21099,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5789200093759024960, guid: ab9278aa8a6f856468c48e893720a765, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5789200093759024960, guid: ab9278aa8a6f856468c48e893720a765, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -433832811
+      objectReference: {fileID: 0}
     - target: {fileID: 5789200093759024974, guid: ab9278aa8a6f856468c48e893720a765, type: 3}
       propertyPath: m_Name
       value: PF Village Props - Crate Small (1)
@@ -21846,6 +21886,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1106805952}
+  - component: {fileID: 1106805953}
   - component: {fileID: 1106805951}
   m_Layer: 7
   m_Name: PP Colour
@@ -21886,6 +21927,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1106805953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106805950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 9f9a9d2efcd1f4c46a2774469b0c9dd5, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!1 &1149977966
 GameObject:
   m_ObjectHideFlags: 0
@@ -22054,6 +22112,14 @@ PrefabInstance:
     - target: {fileID: 4440549515902312758, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440549515902312759, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440549515902312759, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -433832811
       objectReference: {fileID: 0}
     - target: {fileID: 4440549515902312761, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
       propertyPath: coin
@@ -22621,6 +22687,14 @@ PrefabInstance:
     - target: {fileID: 4440549515902312758, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440549515902312759, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440549515902312759, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -433832811
       objectReference: {fileID: 0}
     - target: {fileID: 4440549515902312761, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
       propertyPath: coin
@@ -60843,9 +60917,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Village Props - Wood Logs
       objectReference: {fileID: 0}
+    - target: {fileID: 982056747370159614, guid: d0bde9a42898be64ab7372c560194d8d, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 982056747370159614, guid: d0bde9a42898be64ab7372c560194d8d, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -433832811
+      objectReference: {fileID: 0}
     - target: {fileID: 982056747370159615, guid: d0bde9a42898be64ab7372c560194d8d, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 982056747370159615, guid: d0bde9a42898be64ab7372c560194d8d, type: 3}
       propertyPath: m_LocalScale.x
@@ -60983,6 +61065,14 @@ PrefabInstance:
     - target: {fileID: 4440549515902312758, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440549515902312759, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440549515902312759, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -433832811
       objectReference: {fileID: 0}
     - target: {fileID: 4440549515902312761, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
       propertyPath: coin
@@ -61264,6 +61354,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4440549515902312759, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440549515902312759, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -433832811
+      objectReference: {fileID: 0}
     - target: {fileID: 4440549515902312761, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
       propertyPath: coin
       value: 
@@ -61284,6 +61382,14 @@ PrefabInstance:
     - target: {fileID: 2018365450437254144, guid: 1509360826d6bb34587310ad4949fdd5, type: 3}
       propertyPath: m_Name
       value: PF Village Props - Barrel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018365450437254146, guid: 1509360826d6bb34587310ad4949fdd5, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018365450437254146, guid: 1509360826d6bb34587310ad4949fdd5, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -433832811
       objectReference: {fileID: 0}
     - target: {fileID: 2018365450437254147, guid: 1509360826d6bb34587310ad4949fdd5, type: 3}
       propertyPath: m_RootOrder
@@ -61653,7 +61759,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5c216928db7b17f4b831faaf77a1e395, type: 3}
+  m_Sprite: {fileID: 1600102369, guid: 57c82dbb1954a9548a7ce234d1236ee6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -61673,7 +61779,7 @@ Transform:
   m_GameObject: {fileID: 1699370608}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 95.99, y: -0.92, z: 0}
-  m_LocalScale: {x: -15, y: 15, z: 1}
+  m_LocalScale: {x: -7.5, y: 7.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -61737,7 +61843,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8ca3c18396cf8d4419d06be887b0ad7b, type: 3}
+  m_Sprite: {fileID: -1492128032, guid: 61f5bc60f854ffa45999fd5f2440214c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -61757,7 +61863,7 @@ Transform:
   m_GameObject: {fileID: 1712276677}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 47.3, y: -0.7, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 1}
+  m_LocalScale: {x: 7.5, y: 7.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -61939,6 +62045,14 @@ PrefabInstance:
     - target: {fileID: 4440549515902312758, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440549515902312759, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440549515902312759, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -433832811
       objectReference: {fileID: 0}
     - target: {fileID: 4440549515902312761, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
       propertyPath: coin
@@ -62179,6 +62293,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5789200093759024960, guid: ab9278aa8a6f856468c48e893720a765, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5789200093759024960, guid: ab9278aa8a6f856468c48e893720a765, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -433832811
+      objectReference: {fileID: 0}
     - target: {fileID: 5789200093759024974, guid: ab9278aa8a6f856468c48e893720a765, type: 3}
       propertyPath: m_Name
       value: PF Village Props - Crate Small (2)
@@ -62730,7 +62852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4652140698946077844, guid: 841104401b14d4c41b55dea41b7c0bf3, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 841104401b14d4c41b55dea41b7c0bf3, type: 3}
@@ -62798,6 +62920,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5789200093759024960, guid: ab9278aa8a6f856468c48e893720a765, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5789200093759024960, guid: ab9278aa8a6f856468c48e893720a765, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -433832811
+      objectReference: {fileID: 0}
     - target: {fileID: 5789200093759024974, guid: ab9278aa8a6f856468c48e893720a765, type: 3}
       propertyPath: m_Name
       value: PF Village Props - Crate Small
@@ -63193,7 +63323,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1b2792c44f1b49b4abb6890de39bbc79, type: 3}
+  m_Sprite: {fileID: -1467018880, guid: 0782f27ac171ecd41a9dd345cb3e0682, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -63213,7 +63343,7 @@ Transform:
   m_GameObject: {fileID: 2141815472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 33.53, y: -0.72, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 1}
+  m_LocalScale: {x: 7.5, y: 7.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
