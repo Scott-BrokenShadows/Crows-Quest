@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/JT/Scripts/MenuAssets/Scenes/Menu.unity
+    guid: 98246f409f06a6a478ccdf0fc403d970
+  - enabled: 1
     path: Assets/Scenes/Crows Quest.unity
     guid: ff893d0b907158c4dbd55fdd73a15d36
   m_configObjects:
