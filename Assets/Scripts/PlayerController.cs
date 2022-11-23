@@ -7,13 +7,10 @@ public class PlayerController : MonoBehaviour
 {
 
     public Rigidbody2D theRB;
-
     public float moveSpeed;
-
     public float inputX;
     public float inputY;
     public SpriteRenderer sprite;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -24,12 +21,15 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (DialogueManager.GetInstance().dialogueIsPlaying)
         {
-            return;
+           return;
         }
-
+       
         theRB.velocity = new Vector2(inputX * moveSpeed, inputY * moveSpeed);
+       
+
         // Flip Sprite with X Input
         if (inputX < 0) sprite.flipX = true; 
         if (inputX > 0) sprite.flipX = false;
@@ -40,4 +40,6 @@ public class PlayerController : MonoBehaviour
         inputX = context.ReadValue<Vector2>().x;
         inputY = context.ReadValue<Vector2>().y;
     }
+
+
 }
