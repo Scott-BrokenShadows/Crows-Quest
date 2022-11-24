@@ -5,8 +5,8 @@ using UnityEngine;
 public class DialogueInteract : MonoBehaviour
 {
     PlayerInputs inputs;
-    public GameObject npc;
-    public TextAsset inkJSON;
+    public GameObject[] npc;
+    public TextAsset[] inkJSON;
 
     private void Awake()
     {
@@ -27,9 +27,12 @@ public class DialogueInteract : MonoBehaviour
 
     public void Talk()
     {
-        if (npc.GetComponent<DialogueTrigger>().playerInRange == true && !DialogueManager.GetInstance().dialogueIsPlaying)
-        {
-            DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+        for(var i=0;i<npc.Length;i++) {
+            if (npc[i].GetComponent<DialogueTrigger>().playerInRange == true && !npc[i].GetComponent<DialogueTrigger>().hasSpoke && !DialogueManager.GetInstance().dialogueIsPlaying)
+            {
+                DialogueManager.GetInstance().EnterDialogueMode(inkJSON[i]);
+                npc[i].GetComponent<DialogueTrigger>().hasSpoke = true;
+            }
         }
     }
 }
