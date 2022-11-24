@@ -8,9 +8,8 @@ public class DialogueTrigger : MonoBehaviour
     
 
     public GameObject visualCue;
-    
-
     public bool playerInRange;
+    public bool hasSpoke;
 
     private void Awake()
     {
@@ -21,7 +20,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying)
+        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying && !hasSpoke)
         {
             visualCue.SetActive(true);
         }
