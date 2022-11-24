@@ -48,7 +48,7 @@ public class Menu : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("down"))
+        if (Input.GetKeyDown("down") || Input.GetKeyDown("s") || Input.GetKeyDown("joystick button 6"))
         {
             if (loopCurrentIndex)
             {
@@ -66,7 +66,7 @@ public class Menu : MonoBehaviour
                 _currentNumber++;
             }
         }
-        else if (Input.GetKeyDown("up"))
+        else if (Input.GetKeyDown("up") || Input.GetKeyDown("w") || Input.GetKeyDown("joystick button 5"))
         {
             if (loopCurrentIndex)
             {
@@ -89,7 +89,7 @@ public class Menu : MonoBehaviour
         {
             _selectedUI.transform.GetChild(0).transform.localScale = Vector3.Lerp(_selectedUI.transform.GetChild(0).transform.localScale, _selectedScale, Time.fixedDeltaTime * _selectedSpeed);
 
-            if (Input.GetKey("space"))
+            if (Input.GetKey("space") || Input.GetKey("joystick button 16"))
             {
                 _selectedUI.transform.GetChild(0).GetComponent<Text>().color = _selectedColorPressed;
             }
@@ -98,7 +98,7 @@ public class Menu : MonoBehaviour
                 _selectedUI.transform.GetChild(0).GetComponent<Text>().color = _selectedColor;
             }
 
-            if (Input.GetKeyUp("space"))
+            if (Input.GetKeyUp("space") || Input.GetKeyUp("joystick button 16"))
             {
 
                 _menuInvokeSelect = _selectedUI.transform.gameObject.GetComponent<MenuInvokeSelected>();
