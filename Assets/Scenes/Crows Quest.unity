@@ -1217,6 +1217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4701717014665229063, guid: 810d0a18551ba834091c5db4a197d5ee, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4701717014665229304, guid: 810d0a18551ba834091c5db4a197d5ee, type: 3}
       propertyPath: crow
       value: 
@@ -1309,6 +1313,10 @@ PrefabInstance:
       propertyPath: coins
       value: 
       objectReference: {fileID: 56795847}
+    - target: {fileID: 4701717014665229311, guid: 810d0a18551ba834091c5db4a197d5ee, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 810d0a18551ba834091c5db4a197d5ee, type: 3}
 --- !u!1 &358489417 stripped
@@ -22095,6 +22103,18 @@ PrefabInstance:
     - target: {fileID: 2934803342795420244, guid: 64cddfc21e04a9c408921968b73a68ad, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198328038531483344, guid: 64cddfc21e04a9c408921968b73a68ad, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198328038531483344, guid: 64cddfc21e04a9c408921968b73a68ad, type: 3}
+      propertyPath: m_UseFullKinematicContacts
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198328038531483346, guid: 64cddfc21e04a9c408921968b73a68ad, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64cddfc21e04a9c408921968b73a68ad, type: 3}

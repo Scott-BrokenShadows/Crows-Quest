@@ -30,9 +30,18 @@ public class PlayerController : MonoBehaviour
         theRB.velocity = new Vector2(inputX * moveSpeed, inputY * moveSpeed);
        
 
-        // Flip Sprite with X Input
-        if (inputX < 0) sprite.flipX = true; 
-        if (inputX > 0) sprite.flipX = false;
+
+        // Flip Sprite with X Input
+        if (inputX < 0)
+        {
+            sprite.flipX = true;
+        }
+        else if (inputX > 0)
+        {
+            sprite.flipX = false;
+        }
+
+        Flip();
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -41,5 +50,25 @@ public class PlayerController : MonoBehaviour
         inputY = context.ReadValue<Vector2>().y;
     }
 
-
+    void Flip()
+    {
+        if (transform.GetChild(2).childCount > 0)
+        {
+            if (sprite.flipX == true)
+            {
+                transform.GetChild(2).localScale =
+                new Vector3(-Mathf.Abs(transform.GetChild(2).localScale.x), transform.GetChild(2).localScale.y, transform.GetChild(2).localScale.z);
+            }
+            else if (sprite.flipX == false)
+            {
+                transform.GetChild(2).localScale =
+                new Vector3(Mathf.Abs(transform.GetChild(2).localScale.x), transform.GetChild(2).localScale.y, transform.GetChild(2).localScale.z);
+            }
+        }
+        else
+        {
+            transform.GetChild(2).localScale =
+            new Vector3(Mathf.Abs(transform.GetChild(2).localScale.x), transform.GetChild(2).localScale.y, transform.GetChild(2).localScale.z);
+        }
+    }
 }
