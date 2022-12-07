@@ -11,11 +11,14 @@ public class PlayerController : MonoBehaviour
     public float inputX;
     public float inputY;
     public SpriteRenderer sprite;
+    private bool stopped;
+
     // Start is called before the first frame update
     void Start()
     {
         // Get Renderer for Sprite Flip
         sprite = this.GetComponent<SpriteRenderer>();
+        stopped = false;
     }
 
     // Update is called once per frame
@@ -24,7 +27,17 @@ public class PlayerController : MonoBehaviour
 
         if (DialogueManager.GetInstance().dialogueIsPlaying)
         {
-           return;
+            Debug.Log("Turn on");
+            stopped = true;
+            theRB.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+            return;
+        }
+        if (stopped == true)
+        {
+            Debug.Log("Turn off");
+            stopped = false;
+            theRB.constraints = RigidbodyConstraints2D.None;
+            theRB.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
        
         theRB.velocity = new Vector2(inputX * moveSpeed, inputY * moveSpeed);
