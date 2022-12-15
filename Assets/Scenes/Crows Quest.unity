@@ -16078,6 +16078,56 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4701717014665229063, guid: 810d0a18551ba834091c5db4a197d5ee, type: 3}
   m_PrefabInstance: {fileID: 338965165}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &480371340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 480371342}
+  - component: {fileID: 480371341}
+  m_Layer: 5
+  m_Name: ResetManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &480371341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480371340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b34cde4e1d2374ab0353a8be9729c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _goToScene: Menu
+--- !u!224 &480371342
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480371340}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 82
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &497185679
 GameObject:
   m_ObjectHideFlags: 0
@@ -62808,7 +62858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4440549515902312758, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.1963267
+      value: -2.226
       objectReference: {fileID: 0}
     - target: {fileID: 4440549515902312758, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -62846,6 +62896,10 @@ PrefabInstance:
       propertyPath: coin
       value: 
       objectReference: {fileID: 3810761396715632739, guid: 29f8371f947ba3243b4e8c67ff76045c, type: 3}
+    - target: {fileID: 4440549515902312761, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
+      propertyPath: brokenPot
+      value: 
+      objectReference: {fileID: 3807536364262763357, guid: 75ed7b58299ceff478850ac73c5ea23b, type: 3}
     - target: {fileID: 4440549515902312762, guid: 09d9518d23a22534e90042a729f96dcf, type: 3}
       propertyPath: m_Name
       value: Pot
